@@ -1,0 +1,29 @@
+.main-container {
+    display: grid;
+
+        grid-template-columns:
+            minmax(20px, 1fr)
+            minmax(375px, 1440px)
+            minmax(20px, 1fr);
+
+
+    > * {
+        grid-column: 2;
+        &.full {
+            grid-column: 1/-1;
+        }
+    }
+    @media screen and (max-width: 380px) {
+        grid-template-columns: 380px;
+        >*{
+            grid-column: 1;
+        }
+    }
+}
+
+.card-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+    margin-bottom: 25px;
+}

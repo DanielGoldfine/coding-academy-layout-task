@@ -1,0 +1,23 @@
+// Setup
+@import "setup/variables.scss";
+@import "setup/functions.scss";
+@import "setup/mixins.scss";
+@import "setup/typography.scss";
+
+// Basics
+@import "basics/helpers.scss";
+@import "basics/layout.scss";
+@import "basics/base.scss";
+@import "basics/links.scss";
+@import "basics/buttons.scss";
+
+// Views
+@import "views/home-page.scss";
+
+
+// components
+@import "components/nav-bar.scss";
+@import "components/hero-section.scss";
+@import "components/features-list.scss";
+@import "components/middle-section.scss";
+@import "components/team-list.scss";

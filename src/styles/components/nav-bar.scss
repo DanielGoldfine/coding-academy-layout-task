@@ -1,0 +1,35 @@
+.nav-bar {
+    z-index: 2;
+    height: 200px;
+    padding: 0 80px;
+    width: 100%;
+    background-color: $bgClr;
+    .logo {
+        img {
+            width: 176px;
+        }
+    }
+    .nav-links {
+        width: 271px;
+        p {
+            font-family: ralewayLight;
+            color: white;
+            font-size: rem(16px);
+            margin: 0;
+        }
+    }
+    @media screen and (max-width: 760px) {
+        padding: 0 24px;
+        .logo {
+            img {
+                width: 80px;
+            }
+        }
+        .nav-links {
+            width: 167px;
+            p {
+                font-size: rem(12px);
+            }
+        }
+    }
+}

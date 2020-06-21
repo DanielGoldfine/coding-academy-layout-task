@@ -1,0 +1,63 @@
+.hero-section {
+    color: white;
+    background-color: $bgClr;
+    position: relative;
+    padding-bottom: 170px;
+    width: 100%;
+    img {
+        width: 720px;
+        margin: 36px 35px;
+        z-index: 2;
+    }
+    h3 {
+        z-index: 2;
+        font-family: ralewayBold;
+        font-size: rem(40px);
+        width: 734px;
+        margin-bottom: 38px;
+    }
+    p {
+        z-index: 2;
+        font-family: openSansRegular;
+        font-size: rem(20px);
+        line-height: 30px;
+        width: 589px;
+        margin-bottom: 34px;
+    }
+    button {
+        z-index: 2;
+        border: none;
+        width: 280px;
+        height: 56px;
+        box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16);
+        border-radius: 28px;
+        background-image: linear-gradient(152deg, #63e1d9 0%, #34a0cd 100%);
+        font-family: ralewayBold;
+        font-size: rem(16px);
+        color: white;
+    }
+    .curvy-desktop {
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        bottom: 0px;
+        margin: 0px;
+    }
+    @media screen and (max-width: 760px) {
+        img {
+            padding: 0 36px;
+            width: 100%;
+        }
+        h3 {
+            padding: 0 28px;
+            width: 100%;
+            font-size: rem(24px);
+        }
+        p {
+            padding: 0 40px;
+            width: 100%;
+            font-size: rem(14px);
+            line-height: 21px;
+        }
+    }
+}
